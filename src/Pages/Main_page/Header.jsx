@@ -3,7 +3,7 @@ import BLS_logo from '../../utils/BLS_logo.png'
 import { flag_url } from '../../utils/constants'
 const Header = () => {
   return (
-    <header className="flex justify-between items-center px-24 py-4 sticky top-0 z-50 bg-white">
+    <header className="flex justify-between items-center px-24 py-4 sticky top-0 z-50 bg-white border-b border-b-gray-200">
       {/* Logo Section */}
       <img src={BLS_logo} className='h-16 w-auto'/>
       {/* Navigation Links */}

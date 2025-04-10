@@ -16,7 +16,7 @@ const Achivment = ({data}) => {
       <img
         src={Background}
         alt="airplane"
-        className="absolute bottom-0 right-0 w-[125px] z-50"
+        className="absolute bottom-0 right-0 w-[125px] z-40"
       />
     </div>
   )

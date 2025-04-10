@@ -2,6 +2,54 @@ import React from 'react'
 import BLS_logo from '../../utils/BLS_logo.png'
 const Footer = () => {
   return (
+    // visa process section
+    <> 
+    <section className="bg-white h-[380px] py-[50px] px-[150px]">
+      <div className="text-center ">
+        <h2 className="h-[60px] text-5xl font-medium mb-4">
+          e-Visa Application Process
+        </h2>
+        <div className="flex justify-between items-center relative gap-12 md:gap-0">
+          {/* Horizontal Line */}
+          <div className="absolute top-12 left-1/2 transform -translate-x-1/2 w-[700px] border-t border-[#CCCCCC] z-0"></div>
+
+          {/* Step 1 */}
+          <div className="flex flex-col items-center text-center z-10  px-4">
+            <div className="bg-[#F4F6F7] w-16 h-16 rounded-full box-content border-[15px] border-white flex items-center justify-center text-lg font-bold text-[#C0902C] mb-4">
+              1
+            </div>
+            <h3 className="text-2xl font-medium  mb-2">Search for visa</h3>
+            <p className=" text-[#333333] max-w-xs">
+              Lorem Ipsum is simply Lorem Ipsum has been the industry’s standard.
+            </p>
+          </div>
+
+          {/* Step 2 */}
+          <div className="flex flex-col items-center text-center z-10  px-4">
+            <div className="bg-[#F4F6F7] w-16 h-16 rounded-full box-content border-[15px] border-white flex items-center justify-center text-lg font-bold text-[#C0902C] mb-4">
+              2
+            </div>
+            <h3 className="text-2xl font-medium  mb-2">Apply for visa</h3>
+            <p className=" text-[#333333] max-w-xs">
+              Lorem Ipsum is simply Lorem Ipsum has been the industry’s standard.
+            </p>
+          </div>
+
+          {/* Step 3 */}
+          <div className="flex flex-col items-center text-center z-10  px-4">
+            <div className="bg-[#F4F6F7] w-16 h-16 rounded-full box-content border-[15px] border-white flex items-center justify-center text-lg font-bold text-[#C0902C] mb-4">
+              3
+            </div>
+            <h3 className="text-2xl font-medium  mb-2">Get Confirmed visa</h3>
+            <p className=" text-[#333333] font-normal max-w-xs">
+              Lorem Ipsum is simply Lorem Ipsum has been the industry’s standard.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* footer */}
     <footer className="bg-[#1F1E1E] text-white pt-10 pb-4 px-24">
       {/* Top Section */}
       <div className="flex justify-between">
@@ -40,6 +88,7 @@ const Footer = () => {
         ( © ) BLS International 2024. All Rights Reserved
       </div>
     </footer>
+  </>
   )
 }
 
