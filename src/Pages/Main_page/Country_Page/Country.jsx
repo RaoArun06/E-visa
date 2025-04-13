@@ -85,9 +85,9 @@ const Country = () => {
       </div>
 
       {/* visa type selection section */}
-      <div className="flex flex-col lg:flex-row gap-10 py-10 px-24 bg-white">
+      <div className="flex flex-col lg:flex-row justify-between py-10 px-24 bg-white">
         {/* Left Section */}
-        <div className="w-[700px]">
+        <div className="max-w-[900px] w-auto">
           <h2 className="text-2xl font-semibold mb-5">Azerbaijan e-Visa</h2>
 
           <div className="relative w-full max-w-[400px] mb-6">
