@@ -5,6 +5,7 @@ import './App.css'
 import Home from './Pages/Main_page/Home_Page/Home'
 import Country from './Pages/Main_page/Country_Page/Country'
 import UserLogin from './Pages/Login/UserLogin'
+import Register from './Pages/Login/Register'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -12,7 +13,8 @@ function App() {
     <div>
       {/* <Home/> */}
       {/* <Country/> */}
-      <UserLogin/>
+      {/* <UserLogin/> */}
+      <Register/>
     </div>
   )
 }
