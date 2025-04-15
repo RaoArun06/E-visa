@@ -1,51 +1,53 @@
 import React, { useState } from "react";
-import { FaUser, FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaUser, FaKey, FaEye, FaEyeSlash } from "react-icons/fa";
 import Header from './Header'
-import Login from '../../utils/Login.jpg'
+import Login from '../../utils/Login.png'
+import I_am_not_a_robot from '../../utils/I_am_not_a_robot.png'
 const UserLogin = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
     <>
     <Header/>
-    <div className="bg-blue-200  flex justify-between mt-10 rounded-md shadow-md overflow-hidden w-[1200px] mx-auto">
+    <div className=" bg-[#F6F9FB] flex items-center justify-center py-8">
+      <div className="bg-white rounded-md shadow-lg flex overflow-hidden max-w-[850px] w-full h-[510px]">
         
         {/* Left Side Image */}
-        <div className="h-[700px]">
+        <div className="h-[510px]">
           <img
-            src= {Login}
+            src={Login}
             alt="Visa Application"
             className="object-cover w-full h-full"
           />
         </div>
 
         {/* Right Side Login Form */}
-        <div className="p-8 md:w-1/2 w-full">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Login to Apply</h2>
+        <div className="px-10 py-2 mt-4 max-w-[420px] w-full">
+          <h2 className="text-2xl font-medium mb-4">Login to Apply</h2>
 
           {/* Email */}
-          <label className="text-sm font-medium text-gray-700">
+          <label className="text-lg text-[#11375C]">
             Username or Email <span className="text-red-500">*</span>
           </label>
-          <div className="flex items-center border border-blue-600 rounded-md px-3 py-2 mt-1 mb-4">
-            <FaUser className="text-gray-400 mr-2" />
+          <div className="flex items-center border border-[#3773AD] rounded-md px-3 py-2 mt-2 mb-4 h-[45px]">
+            <FaUser className="text-[#11375C] mr-4 w-6 h-auto" />
             <input
               type="email"
               placeholder="Email"
-              className="w-full outline-none text-sm"
+              className="w-full outline-none "
             />
           </div>
 
           {/* Password */}
-          <label className="text-sm font-medium text-gray-700">
+          <label className="text-lg text-[#11375C]">
             Password <span className="text-red-500">*</span>
           </label>
-          <div className="flex items-center border border-blue-600 rounded-md px-3 py-2 mt-1 mb-2">
-            <FaLock className="text-gray-400 mr-2" />
+          <div className="flex items-center border border-[#3773AD] rounded-md px-3 py-2 mt-2 mb-4 h-[45px]">
+            <FaKey className="text-[#11375C] mr-4 w-6 h-auto" />
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Password"
-              className="w-full outline-none text-sm"
+              className="w-full outline-none "
             />
             <button
               type="button"
@@ -53,46 +55,48 @@ const UserLogin = () => {
               className="focus:outline-none"
             >
               {showPassword ? (
-                <FaEyeSlash className="text-gray-500" />
+                <FaEye className="text-[#38648E]" />
               ) : (
-                <FaEye className="text-gray-500" />
+                
+                <FaEyeSlash className="text-[#38648E]" />
               )}
             </button>
           </div>
 
           {/* Options */}
-          <div className="flex justify-between items-center mb-4 text-sm">
+          <div className="flex justify-between items-center mb-4  text-[#11375C]">
             <label className="flex items-center gap-2">
-              <input type="checkbox" className="accent-blue-600" />
+              <input type="checkbox" className="" />
               Remember me
             </label>
-            <button className="text-blue-800 hover:underline">
+            <button className=" hover:underline">
               Forgot password?
             </button>
           </div>
 
           {/* CAPTCHA Placeholder */}
-          <div className="mb-6">
+          <div className="mb-6 h-[70px]">
             <img
-              src="/captcha-placeholder.png" 
+              src={I_am_not_a_robot}
               alt="Captcha"
-              className="w-full h-[75px] object-contain border"
+              className="w-full h-[75px] object-contain "
             />
           </div>
 
           {/* Submit */}
-          <button className="w-full bg-[#0b2f55] text-white py-2 rounded-md font-semibold text-lg">
+          <button className="w-full h-[45px] bg-[#11375C] text-white py-2 rounded-md font-semibold text-lg">
             Submit
           </button>
 
           {/* Footer */}
-          <p className="text-sm text-center mt-6 text-gray-700">
+          <p className="text-[#11375C] text-center mt-4">
             Don't have an account?{" "}
-            <span className="font-semibold text-blue-800 cursor-pointer hover:underline">
+            <span className="font-bold cursor-pointer ">
               Create account
             </span>
           </p>
         </div>
+      </div>
     </div>
     </>
     );

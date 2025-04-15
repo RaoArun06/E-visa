@@ -3,24 +3,24 @@ import { FaChevronDown } from "react-icons/fa";
 import BLS_logo from '../../utils/BLS_logo.png'
 const Header = () => {
   return (
-    <header className="flex items-center justify-between px-52 py-4 bg-white shadow-sm border-b border-gray-200">
+    <header className="h-[80px] px-[120px] flex items-center justify-between bg-white shadow-sm border-b border-gray-200">
       {/* Left: Logo */}
-      <img src={BLS_logo} className='h-20 w-auto'/>
+      <img src={BLS_logo} className=' w-[100px] '/>
 
       {/* Center: Title */}
-      <h1 className="text-5xl font-normal text-gray-900 text-center">
+      <h1 className="text-4xl font-normal text-center">
         Ethiopia e-Visa Application
       </h1>
 
       {/* Right: Language Dropdown */}
-      <div className="flex items-center space-x-2 cursor-pointer ">
+      <div className="flex items-center cursor-pointer gap-2">
         <img
           src="https://flagcdn.com/gb.svg"
           alt="UK Flag"
-          className="w-10 h-10 rounded-full object-cover"
+          className="w-[30px] h-[30px] rounded-full object-cover"
         />
-        <span className="text-xl font-semibold text-gray-800">Eng (us)</span>
-        <FaChevronDown className="text-gray-600 text-lg" />
+        <span className="text-xl font-semibold">Eng (us)</span>
+        <FaChevronDown className=" text-lg" />
       </div>
     </header>
   );
