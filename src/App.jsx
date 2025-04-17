@@ -6,6 +6,7 @@ import Home from './Pages/Main_page/Home_Page/Home'
 import Country from './Pages/Main_page/Country_Page/Country'
 import UserLogin from './Pages/Login/UserLogin'
 import Register from './Pages/Login/Register'
+import VisaCategory from './Pages/Appointment_pages/VisaCategory'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -14,7 +15,8 @@ function App() {
       {/* <Home/> */}
       {/* <Country/> */}
       {/* <UserLogin/> */}
-      <Register/>
+      {/* <Register/> */}
+      <VisaCategory/>
     </div>
   )
 }
